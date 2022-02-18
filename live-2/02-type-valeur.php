@@ -7,12 +7,17 @@
 
 $auteur = "Victor Hugo" ; 
 $auteur2 = 'George Sand' ; // méthode qu'il conseille 
-$citation = 'Victor Hugo a dit "ou et donc or ni car "' ; 
-$citation2 = "Victor Hugo a dit \"ou et donc or ni car \"" ; 
 
+$citation = 'Victor Hugo a dit "ou et donc or ni car "' ; 
+$citation2 = "Victor Hugo a dit \"ou et donc or ni car \"" ; // il faut echaper pour ne pas interpréter les double cote
+
+
+// saut de ligne à l'intérieur d'une chaine de caractéres (PHP 8) (mais pas sur le site)
 $phrase = 'bonjour les amis
 comment allez vous ??
 aujourd\'hui';
+
+echo $phrase;
 
 // nombre : nombre entier 1,2 ,10 , 20
 //          float nombre à virgule 1.2
@@ -25,7 +30,11 @@ $temperature = -5 ;
 var_dump($temperature); // int => integer => nombre entier 
 var_dump(REDUCTION);    // float => chiffre à virgule flottante => nombre à virgule 
 
-// xdebug 
+// xdebug ===> ca fais des sauts de ligne
+
+/* La balise <pre> a pour particularité de restituer le texte dans le code source de la même manière qu’il a été tapé : les espaces multiples, les tabulations et les sauts de ligne sont préservésµ*/
+
+
 // <pre></pre>
 echo "<pre>";
 print_r($temperature);
@@ -39,6 +48,9 @@ echo '<br>';
 echo "</pre>"; 
 
 
+
+// astuce au début du nom de la variable 'is' (est ce que) permet de se dire qu'on attend un booléen
+
 // boolean 
 $isRedacteur = true ; // true VALEUR => mot clé du langage PHP define() echo 
 // var_dump
@@ -46,30 +58,38 @@ $isRedacteur2 = "true" ; // ce n'est pas un boolean => string
 
 $isAdmin = false ; 
 
-$isAvailable = 10 > 3 ; 
+$isAvailable = 10 > 3 ; // return true
 
 // string / number (int / float) / boolean 
-// valeur primitive 
+
+// ----------------- valeur primitive -----------------------------
 // 1 variable = 1 seule valeur 
 
-// valeurs scalaires 
+// ------------------ valeurs scalaires ---------------------------- 
 // stocker dans une variable plusieurs valeurs en même temps 
 
 // tableau => array 
 
-// 2 manières de créer des tableaux en PHP 
-// vieille de PHP 
+echo '<br>';
+echo '----------- tableau -------------------';
+echo '<br>';
 
+// 2 manières de créer des tableaux en PHP 
+
+// vieille de PHP 
 $saisons = array("été" , "printemps", "automne", "hiver" );
 
 // à partir de la version 5.3 => deuxième méthode qui a été ajoutée
-
 $fleurs = [ "jasmin" , "rose" , "lilas" ]; 
 
-echo $saisons ; // Warning: Array to string conversion
+echo $saisons ; // Warning: Array to string conversion 
+
+// pour afficher le contenu d un tableau soit print_r (avec <pre></pre> c'est plus lisible) soit var_dump
+
 echo "<pre>";
 print_r($saisons); 
 echo "</pre>";
+
 
 var_dump($fleurs); 
 
@@ -79,7 +99,7 @@ $parametre = [2 , "toto" , true , []];
 
 var_dump($parametre[0]); 
 
-// tableaux associatifs 
+// tableaux associatifs ( clé => valeur)
 
 $data = [
     "largeur" => 200, // "index nommé" => valeur
@@ -87,11 +107,22 @@ $data = [
     "couleur-fond" => "red"
 ]; 
 
+echo "<pre>";
+print_r($data); 
+echo "</pre>";
+
+var_dump($data); 
+
+
 $data2 = array( 
     "police" => "arial",
     "font-weight" => 500 ,
     "border" => "2px solid green"
 );
+
+echo '<br>';
+echo '----------- classe -------------------';
+echo '<br>';
 
 
 // objet 
@@ -106,9 +137,14 @@ class Etudiant{
 $etudiant = new Etudiant(); 
 // $etudiant instance de class => objet 
 
-var_dump($etudiant->nom); 
+var_dump($etudiant->nom); //!!!! pas de $ devant les méthodes (ici nom au lieu de $nom)
 
 var_dump($etudiant); 
+
+
+echo "<pre>";
+print_r($etudiant); 
+echo "</pre>";
 
 // résoudre un problème en informatique 
 // variables stocker des valeurs 
@@ -118,12 +154,15 @@ var_dump($etudiant);
 
 // https://github.com/webdevproformation/php-studi
 
-// caniuse.com = HTML CSS Javascript 
+// caniuse.com = HTML CSS Javascript (verifier la compatibilté avec les navigateurs)
+
+
 // PHP w3school 
 // support studi 
-// EOL => End of Line \n
+// PHP_EOL => End of Line \n
 echo "<pre>";
 print_r("bonjour" . PHP_EOL . "comment allez vous ??");
+echo '<br>';
 print_r("bonjour2 \n comment allez vous ??");
 echo "</pre>";
 
