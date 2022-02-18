@@ -22,3 +22,6 @@ Types scalaires :
 Autres types :
 - numeric string 
 - null
+
+
+bdf
