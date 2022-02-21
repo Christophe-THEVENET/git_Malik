@@ -24,3 +24,4 @@ function premier () {
 // exécuter une fonction === exécuter les instructions qui ont été stockée lors de la déclaration / création de la fonction 
 
 premier() ;  // exécuter une fonction 
+

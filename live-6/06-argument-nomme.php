@@ -2,7 +2,7 @@
 
 // https://www.php.net/manual/fr/functions.arguments.php#functions.named-arguments
 
-function triangle ( $largeur , $hauteur , $couleur , $profondeur , $prix){
+function triangle (float $largeur ,float $hauteur ,string $couleur ,float $profondeur ,float $prix){
  var_dump($profondeur);
  var_dump($hauteur);
 }
@@ -11,4 +11,5 @@ function triangle ( $largeur , $hauteur , $couleur , $profondeur , $prix){
 // rappeler le nom de votre paramètre au moment de  l'exécution 
 // argument nommé => PHP8 
 
-triangle(largeur: 10 , hauteur :20 , couleur : "#000" , prix: 40 , profondeur: 444) ; 
+triangle(largeur: 10 , hauteur :20 , couleur : "#000" , prix: 40 , profondeur: 444); 
+
