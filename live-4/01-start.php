@@ -65,7 +65,7 @@ $toto = 2 + "4";
 // $toto = 2 + 4; 
 var_dump($toto);  // 6
 
-$toto2 = @(12 + "20px") ;  // bizarrerie de PHP !! 
+$toto2 = @(12 + "20px") ;  // bizarrerie de PHP !!  l arrobase enleve le warning
 var_dump($toto2); 
 
 // opérateurs booleans && || ! 
@@ -73,11 +73,11 @@ var_dump($toto2);
 
 // site internet gmail => login et mot de passe il faut que les deux identifiants soient correctes en MEME temps 
 
-$loginBdd = "alain";
-$mdpBdd = "azerty";
+$loginBdd = "alain"; // ds la  BDD
+$mdpBdd = "azerty"; // ds la BDD
 
 $seConnecterABoiteMailGmail = "Alain" == $loginBdd && "azerty" == $mdpBdd ; 
-//                                    false        &&         true 
+//                            false (Majuscule)    &&         true 
 //                                               false 
 
 var_dump($seConnecterABoiteMailGmail); // false => les indentifiants saisis ne sont pas conformes ... réessayer ... 
