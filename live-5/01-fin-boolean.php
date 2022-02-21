@@ -1,6 +1,9 @@
 <?php 
 
-// empty() isset()
+// empty() ===> est ce que la variable existe et est ce qu'elle ne contient rien
+// isset() ===> est ce que la variable existe
+
+
 // fonction native de php 
 
 // est ce que la variable existe ET sa valeur n'est pas vide 

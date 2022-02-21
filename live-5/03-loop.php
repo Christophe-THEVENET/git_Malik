@@ -33,8 +33,10 @@ for($i = 0; $i < 3 ; $i++ ){
 
 // si on voudrait executer deux fois ce code, on ferait une boucle imbriquée? 
 for($i = 0 ; $i <2; $i++){
+    echo $i.' <br>';
+    
     for($j = 0; $j<3 ; $j++){
-        echo $j.'<br>';
+        echo $j.' double boucle<br>';
     }
 }
 
