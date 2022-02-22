@@ -2,7 +2,12 @@
 
 $tableau_indexe = [ "lundi" , "mardi" , "mercredi" ] ;
 //                    0          1         2
-var_dump($tableau_indexe); 
+
+echo '<pre>';
+echo 'tableau indéxé : ';
+print_r($tableau_indexe); 
+echo '</pre>';
+
 
 $tableau_associatif = [ 
         "premier" => "lundi"  ,
@@ -11,7 +16,11 @@ $tableau_associatif = [
         "dernier"  => "mercredi"
 ];
 
-var_dump($tableau_associatif); 
+echo '<pre>';
+echo 'tableau associatif : ';
+print_r($tableau_associatif); 
+echo '</pre>';
+
 
 echo $tableau_associatif["dernier"]; 
 

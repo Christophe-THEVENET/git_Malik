@@ -28,13 +28,21 @@ array_unshift($stack , "lundi" , "mardi") ;
 // $stack = ["lundi" , "mardi" , "orange", "banana","apple", "raspberry" , 1 , false , [1,2]]
 
 var_dump($stack); 
+
+
+
+
+
 $panier = [];
 
 array_push($panier , [ "qte" => 1 , "nom" => "article1" ]);
 array_push($panier , [ "qte" => 10 , "nom" => "article 25" ]);
 array_push($panier , [ "qte" => 2 , "nom" => "article 99" ]);
 
-var_dump($panier); 
+
+echo '<pre>';
+print_r($panier); 
+echo '</pre>';
 
 // permettent de supprimer un élément dans le tableau
 // unset()
@@ -43,11 +51,15 @@ echo "<hr>";
 unset($panier[0]);  // supprimer l'élément qui a l'index 0 dans $panier
 // unset($panier); // supprimer TOUT $panier => supprimer la variable de la mémoire de PHP 
 
-var_dump($panier); // Warning: Undefined variable $panier
+echo '<pre>';
+print_r($panier); 
+echo '</pre>'; 
 
 echo "<hr>"; 
 
 array_splice($panier , 1 );
 
-var_dump($panier); 
+echo '<pre>';
+print_r($panier); 
+echo '</pre>';
 

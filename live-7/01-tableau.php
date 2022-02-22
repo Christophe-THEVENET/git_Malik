@@ -10,7 +10,11 @@ $tableau2 = [ 1,  2, 3, 4 ] ;
 
 //echo $tableau2 ; // erreur Warning: Array to string conversion
 
+echo '<pre>';
 print_r($tableau2);
+echo '</pre>';
+
+
 
 var_dump($tableau2); 
 
@@ -33,7 +37,7 @@ echo $saisons[ 4 - 1 ] . "<br>"; // printemps
 
 echo count($saisons) . "<br>"; // 4 le nombre d'éléments dans le tableau 
 
-echo $saisons[ count($saisons) - 1  ] ; // printemps
+echo $saisons[ count($saisons) - 1  ]. "<br>"; ; // printemps
 // afficher le dernier élément / valeur stockée dans la variable $saisons
 
 echo "coucou";
@@ -47,4 +51,5 @@ var_dump($t); // afficher tout le contenu du tableau
 
 echo $t[1]; 
 var_dump($t[0]); // afficher 1 valeur dans le tableau $t
+
 

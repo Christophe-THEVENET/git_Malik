@@ -15,5 +15,5 @@ function toto(){
 function tata($param){ // $paramètre  conseillé 
     var_dump($param);
 }
-tata($v); // utilise ta variable globale comme argumentde ta fonction 
+tata($v); // utilise ta variable globale comme argument de ta fonction 
 

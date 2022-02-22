@@ -7,9 +7,9 @@
 // $_SESSION 
 // elles sont créées AUTOMATIQUEMENT par PHP 
 
-// $_GET = ".....";
+// $_GET = "....."; ===> pas besoin de les déclarer
 
-// automatiquement super globale 
+// automatiquement super globale donc utilisable partout
 
 var_dump($_GET); // global
 
@@ -17,9 +17,10 @@ function calcul(){
     var_dump($_POST); 
 }
 
+
 class A{
 
-    static $largeur = 20 ; 
+    static $largeur = 20 ;
 
     public function method(){
         var_dump($_SERVER);
@@ -37,7 +38,6 @@ class A{
 // $_SESSION 
 // tableau => [ "clé" => "valeur", "clé => "valeur" ]
 // tableaux associatifs
-// tableau et les tableaux  
 
 // $_SERVER
 

@@ -11,7 +11,7 @@ function calculDistance(){
     echo $variable ; 
 }
 
-// Warning: Undefined variable $variable 
+// Warning: Undefined variable $variable si pas déclaré en global dans la fonction
 calculDistance();
 
 

@@ -1,6 +1,12 @@
 <?php 
 
-var_dump($_POST); // []
+var_dump($_POST); // par défaut comme GET c'ets un tableau vide []
+
+echo '<hr>';
+
+
+
+
 if(!empty($_POST["prix"] && !empty($_POST["description"] && !empty($_POST["commentaire"])))){
     // requete en base de données ajouter les informations dans une table
     // email => ok merci pour l'info ....
@@ -14,7 +20,7 @@ if(!empty($_POST["prix"] && !empty($_POST["description"] && !empty($_POST["comme
 ?>
 
 <form action="" method="post">
-    <input type="number" name="prix" placeholder="saisir un prix">
+    <input type="number" name="prix"  placeholder="saisir un prix">
     <input type="text" name="description" placeholder="saisir une description">
     <br>
     <textarea name="commentaire" cols="30" rows="10" placeholder="saisir un commentaire"></textarea>

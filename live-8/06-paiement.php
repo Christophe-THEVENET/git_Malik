@@ -1,6 +1,6 @@
 <?php 
 
-session_start();
+session_start(); // declarer et recup la variable
 
 // unset($_SESSION["panier"]); 
 // var_dump($_SESSION["panier"]);
