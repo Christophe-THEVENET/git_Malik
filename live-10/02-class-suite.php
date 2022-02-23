@@ -7,7 +7,7 @@
 //$taille = 200;
 
 class Arbre{
-    public $taille = 1500 ; // QUE dans la class
+    public $taille = 1500 ; // QUE dans la class   public ===> portée des variables (que dans les classes)
     public $unite = "m" ;
     public $nom = "chêne" ; 
 }
@@ -32,7 +32,7 @@ var_dump($phrase);
 // class / objet => ORGANISER des concepts dans votre projet 
 // dans un espace => dans un class => objet 
 
-// -> c'est pareil que =>
+// -> c'est  pas pareil que =>
 // -> en PHP et instance de class
 // => en PHP mais pour les tableaux associatifs
 

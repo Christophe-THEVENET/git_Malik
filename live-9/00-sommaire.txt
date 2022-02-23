@@ -27,7 +27,7 @@ rename($from, $to); // $_FILES
 
 glob()
 
-__FILE__ // constante de PHP 
+__FILE__ // constante de PHP // donne le nom du fichier en cours
 dirname(__FILE__)
 basename($filenameWithPath)
 

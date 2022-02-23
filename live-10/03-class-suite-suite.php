@@ -16,7 +16,6 @@ class Vehicule{ // PascalCase
     }
 
     public function getAnneeAchat( DateTime $annee   ) :DateTime{
-
         return $annee; 
     }
 }

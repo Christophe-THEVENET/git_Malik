@@ -1,17 +1,57 @@
 <?php 
-// Que des fonctions communiquent avec une base de données
+// Que des fonctions qui communiquent avec une base de données
 
 // plusieurs fonctions => traitements 
 // récupérer des informations dans un base de données
 function getUsers(){
     return [
         [
-            "id" => 1,
-            "nom" => "Pierre",
+            "id" => 8,
+            "nom" => "Darrell",
             "isAdmin" => true
         ],
         [
-            "id" => 12,
+            "id" => 42,
+            "nom" => "Béatrice",
+            "isAdmin" => true
+        ],
+        [
+            "id" => 34,
+            "nom" => "Iva",
+            "isAdmin" => true
+        ],
+        [
+            "id" => 72,
+            "nom" => "Béatrice",
+            "isAdmin" => true
+        ],
+        [
+            "id" => 7,
+            "nom" => "Katharine",
+            "isAdmin" => true
+        ],
+        [
+            "id" => 76,
+            "nom" => "Béatrice",
+            "isAdmin" => true
+        ],
+        [
+            "id" => 2,
+            "nom" => "Jeanette",
+            "isAdmin" => true
+        ],
+        [
+            "id" => 32,
+            "nom" => "Béatrice",
+            "isAdmin" => true
+        ],
+        [
+            "id" => 8,
+            "nom" => "Alice",
+            "isAdmin" => true
+        ],
+        [
+            "id" => 54,
             "nom" => "Béatrice",
             "isAdmin" => true
         ],

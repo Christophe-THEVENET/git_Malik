@@ -7,7 +7,7 @@ Cependant, actuellement, rien n'empêche un développeur mal averti ou mal inten
 met en place code qui est le plus protégé et le plus robuste possible 
 
 pas possible de faire un code aucun cas bizarre qu'il va laisser passer 
-code qui est inaccassible pour les autres développeurs 
+code qui est inaccessible pour les autres développeurs 
 
 => envoie des messages NON 
 => code ne marche plus pour lui .... 

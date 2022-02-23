@@ -19,3 +19,6 @@ function renderPiedPage(){
     global $DOMAIN ; 
     return $DOMAIN ; 
 }
+
+
+

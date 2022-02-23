@@ -23,9 +23,9 @@ $etudiant = new EtudiantSuperieur() ;
 
 // dans la class définir ce que va faire l'objet 
 // class => moule à gâteau
+// produire avec la class => gâteau
 // MAIS on ne peut pas utiliser la class directement dans le code 
 // il faut au préalable créer une instance de class => objet
-// produire avec la class => gâteau
 
 var_dump($etudiant); 
 // object(EtudiantSuperieur)[1] // id dans la mémoire
@@ -34,3 +34,4 @@ var_dump($etudiant);
 // [1]  // id dans la mémoire
 
 // 
+

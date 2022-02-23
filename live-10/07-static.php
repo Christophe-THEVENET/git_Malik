@@ -8,12 +8,12 @@ class Librairie{
     static public function soustraction(){}
 
     static public function faireCalcul(){
-        self::multiplication();
+        self::multiplication(); // equivalent de this un peu
         var_dump(self::$prix); 
     }
 }
 
-// méthode static : méthode que l'on peut utiliser dans avoir besoin d'instancier la class hors de la class
+// méthode static : méthode que l'on peut utiliser sans avoir besoin d'instancier la class hors de la class
 
 /* $l = new Librairie();
 $l->addition();  */

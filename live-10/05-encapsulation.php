@@ -25,7 +25,7 @@ class B{
     }
     // setter 
     public function setProp1($val){
-        if(gettype($val) === "integer" && $val >= 20) {
+        if(gettype($val) === "integer" && $val >= 20) { // ca permet de faire des vérifications avant  d autoriser a modifier
             $this->prop1 = $val ;
         } 
     }
